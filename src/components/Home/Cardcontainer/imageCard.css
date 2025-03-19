@@ -1,0 +1,223 @@
+* {
+    text-align: start;
+}
+
+.cardWrapper {
+    /* width: 90%; */
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.cardWrapper .card {
+    width: 261px;
+    border: 1px solid var(--secondary_color);
+    border-radius: 30px;
+    padding: 31px 21px;
+
+}
+
+.cardWrapper .card .cardIcon {
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary_color);
+    background-color: #FBFFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cardWrapper .card h4 {
+    font-family: var(--space-grotesk);
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cardWrapper .card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary_color);
+}
+
+/* properties card */
+
+.PropertyCardSection {
+    background-color: var(--primary_color);
+    padding: 80px 0;
+}
+
+.PropertyCardSection .propertyListening {
+    width: 80%;
+    margin: auto;
+}
+
+/* .PropertyCardSection .propertyListening .listeningHeading{
+
+} */
+.PropertyCardSection .propertyListening .listeningHeading h2 {
+    text-align: center;
+    color: white;
+    font-size: 130px;
+    font-family: var(--space-grotesk);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper {
+    width: 450px;
+    height: 363px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+}
+
+.PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper .propertyImage img {
+    width: 420px;
+    height: 235px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 15px 15px;
+
+}
+
+.PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper .propertyImage .rentTag {
+    position: absolute;
+    padding: 10px 25px;
+    top: 10px;
+    margin: 15px 15px;
+    left: 11px;
+    background: white;
+    border: 1px solid var(--secondary_color);
+    border-radius: 100vh;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary_color);
+}
+
+.PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--space-grotesk);
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper p {
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--space-grotesk);
+    color: var(--paragraph-color);
+    margin-bottom: 20px;
+    word-spacing: 5;
+}
+
+.PropertyCardSection .propertyListening .PropertyCard {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .cardWrapper {
+        gap: 20px;
+        width: 85%;
+    }
+
+    .cardWrapper .card {
+        width: 220px;
+        padding: 25px 18px;
+    }
+
+    .cardWrapper .card h4 {
+        font-size: 22px;
+    }
+
+    .cardWrapper .card p {
+        font-size: 14px;
+    }
+
+    .PropertyCardSection .propertyListening .listeningHeading h2 {
+        font-size: 100px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper {
+        width: 400px;
+        height: auto;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper .propertyImage img {
+        width: 380px;
+        height: 220px;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .cardWrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .cardWrapper .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .PropertyCardSection .propertyListening {
+        width: 90%;
+    }
+
+    .PropertyCardSection .propertyListening .listeningHeading h2 {
+        font-size: 80px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper {
+        width: 350px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper .propertyImage img {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .cardWrapper {
+        width: 95%;
+    }
+
+    .cardWrapper .card {
+        max-width: 280px;
+    }
+
+    .PropertyCardSection .propertyListening .listeningHeading h2 {
+        font-size: 60px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard .PropertyCardWrapper .propertyImage img {
+        width: 90%;
+        height: 180px;
+    }
+
+    .PropertyCardSection .propertyListening .PropertyCard {
+        gap: 30px;
+    }
+}

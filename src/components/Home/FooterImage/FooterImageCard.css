@@ -1,0 +1,88 @@
+.bottomWrapper {
+    display: flex;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    padding-inline: 10px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.bottomWrapper .image img {
+    width: 450px;
+    height: 350px;
+}
+
+.bottomWrapper .paris img {
+    border-top-left-radius: 35%;
+}
+
+.bottomWrapper .child img {
+    border-top-right-radius: 35%;
+}
+
+.bottomWrapper .snow img {
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+}
+
+.bottomWrapper .person img {
+    border-top-left-radius: 35%;
+}
+
+.bottomWrapper .table img {
+    border-top-right-radius: 35%;
+}
+@media (max-width: 1024px) {
+    .bottomWrapper {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .bottomWrapper .image img {
+        width: 350px;
+        height: 280px;
+    }
+    .bottomWrapper .table img, .bottomWrapper .paris img
+    , .bottomWrapper .child img
+    , .bottomWrapper .snow img
+    , .bottomWrapper .person img{
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .bottomWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomWrapper .image img {
+        width: 300px;
+        height: 240px;
+    }
+    .bottomWrapper .table img, .bottomWrapper .paris img
+    , .bottomWrapper .child img
+    , .bottomWrapper .snow img
+    , .bottomWrapper .person img{
+        border-radius: 20px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .bottomWrapper {
+        padding-inline: 5px;
+    }
+
+    .bottomWrapper .image img {
+        width: 100%;
+        height: auto;
+    }
+    .bottomWrapper .table img, .bottomWrapper .paris img
+    , .bottomWrapper .child img
+    , .bottomWrapper .snow img
+    , .bottomWrapper .person img{
+        border-radius: 20px;
+    }
+}

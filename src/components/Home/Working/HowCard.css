@@ -1,0 +1,190 @@
+.howWrapper {
+    width: 70%;
+    margin: auto;
+    /* display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center; */
+}
+
+.howWrapper .howWrapperContent h2 {
+    text-align: center;
+    font-size: 120px;
+    font-family: var(--space-grotesk);
+    font-weight: 400;
+    color: var(--primary_color);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.howWrapper .howCardContainer {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.howWrapper .howCardContainer .cardContent {
+    width: 416px;
+    height: 401px;
+    border: 1px solid var(--secondary_color);
+    border-radius: 30px;
+    margin: auto 0;
+
+}
+
+.howWrapper .howCardContainer .cardContent {
+    padding: 30px 20px;
+}
+
+.howWrapper .howCardContainer .cardTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-bottom: 60px;
+}
+
+.howWrapper .howCardContainer .cardTop .stepTag {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.howWrapper .howCardContainer .cardTop .howCardImage img {
+    width: 176px;
+    height: 192px;
+    border-radius: 30px;
+}
+
+.howWrapper .howCardContainer .cardTop .stepTag .verticalLine {
+    height: 145px;
+    width: 1px;
+    background-color: var(--secondary_color);
+}
+
+.howWrapper .howCardContainer .cardHeading h2 {
+    font-family: var(--space-grotesk);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.howWrapper .howCardContainer .cardHeading p {
+    font-family: var(--space-grotesk);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--paragraph-color);
+}
+
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .howWrapper {
+        width: 85%;
+    }
+
+    .howWrapper .howWrapperContent h2 {
+        font-size: 80px;
+    }
+
+    .howWrapper .howCardContainer {
+        gap: 40px;
+    }
+
+    .howWrapper .howCardContainer .cardContent {
+        width: 400px;
+        height: auto;
+    }
+
+    .howWrapper .howCardContainer .cardTop {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .howWrapper .howCardContainer .cardTop .howCardImage img {
+        width: 150px;
+        height: 160px;
+    }
+
+    .howWrapper .howCardContainer .cardTop .stepTag .verticalLine {
+        height: 100px;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .howWrapper {
+        width: 90%;
+    }
+
+    .howWrapper .howWrapperContent h2 {
+        font-size: 60px;
+    }
+
+    .howWrapper .howCardContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .howWrapper .howCardContainer .cardContent {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .howWrapper .howCardContainer .cardTop {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .howWrapper .howCardContainer .cardTop .howCardImage img {
+        width: 130px;
+        height: 140px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .howWrapper .howWrapperContent h2 {
+        font-size: 40px;
+    }
+
+    .howWrapper .howCardContainer {
+        gap: 20px;
+    }
+
+    .howWrapper .howCardContainer .cardContent {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .howWrapper .howCardContainer .cardTop {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+
+    .howWrapper .howCardContainer .cardTop .howCardImage img {
+        width: 200px;
+        height: 190px;
+    }
+
+    .howWrapper .howCardContainer .cardHeading h2 {
+        font-size: 18px;
+    }
+
+    .howWrapper .howCardContainer .cardHeading p {
+        font-size: 14px;
+    }
+}

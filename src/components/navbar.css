@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --primary_color:#002f6c;
+    --secondary_color:rgba(0,0,0 ,0.15);
+    --heading_font:"syne";
+    --paragraph_font:"Hanken Grotesk";
+    --paragraph-color:#747474;
+    --space-grotesk:"Space Grotesk";
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 98px;
+    border-bottom: 2px solid var(--primary_color);
+}
+.innerHeaderWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.navbarWrapper{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+
+}
+.navbarWrapper nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbarWrapper nav ul li a{
+    display: inline-block;
+    padding: 6px 24px;
+    background: var(--primary_color);
+    border-radius: 100vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--paragraph_font);
+}
+.navbarWrapper .callToAction{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    padding: 6px 24px;
+    border-radius: 100vh;
+    text-transform: uppercase;
+}
+.btn.rounded{
+    padding: 6px;
+}
+.btn.btn-filled{
+    background: var(--primary_color);
+    color: white;
+
+}
+.btn.btn-unfilled{
+    border: 1px solid;
+    
+
+}
+.cardbtn{
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid var(--secondary_color);
+    border-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.cardCount{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    height: 20px;
+    width: 20px;
+    background: var(--primary_color);
+    border-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: white;
+}
+/* Responsive Navigation */
+@media (max-width: 1024px) {
+    .innerHeaderWrapper {
+        width: 90%;
+    }
+
+    .navbarWrapper {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbarWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbarWrapper nav{
+        display: none;
+    }
+    .navbarWrapper nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbarWrapper nav ul li a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .innerHeaderWrapper {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+    
+
+    .navbarWrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbarWrapper nav ul {
+        width: 100%;
+        display: none;
+        
+        gap: 10px;
+    }
+
+    .navbarWrapper .callToAction {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+    }
+}

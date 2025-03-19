@@ -1,0 +1,183 @@
+.articleWrapper {
+    padding: 80px 0;
+}
+
+.articleWrapper .articleContent {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.articleWrapper .articleContent .topSection {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 145px;
+    margin-bottom: 20px;
+
+}
+
+.articleWrapper .articleContent .topSection h3 {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--space-grotesk);
+    text-transform: uppercase;
+}
+
+.articleWrapper .articleContent .middleSection {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.articleWrapper .articleContent .middleSection .more {
+    display: flex;
+    align-items: center;
+}
+
+.articleWrapper .articleContent .middleSection h2 {
+    width: 50%;
+    font-size: 54px;
+    font-weight: 400;
+    font-family: var(--space-grotesk);
+    color: var(--primary_color);
+    text-transform: uppercase;
+}
+
+.articleWrapper .articleContent .bottomSection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.articleWrapper .articleContent .bottomSection .imageContainer img {
+
+    border-radius: 30px;
+
+}
+
+.articleWrapper .articleContent .bottomSection .blogWrapper .blogCard {
+    display: flex;
+    width: 740px;
+    height: 193px;
+    justify-content: space-between;
+    border: 1px solid var(--secondary_color);
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.articleWrapper .articleContent .bottomSection .blogWrapper .blogCard .blogContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.articleWrapper .articleContent .bottomSection .blogWrapper .blogCard .blogContent h3 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--space-grotesk);
+
+}
+
+.articleWrapper .articleContent .bottomSection .blogWrapper .blogCard .blogContent .date {
+    color: var(--primary_color);
+    border: 1px solid var(--secondary_color);
+    font-family: var(--space-grotesk);
+}
+
+.articleWrapper .articleContent .bottomSection .blogWrapper .blogCard img {
+    width: 186px;
+    height: 131px;
+    border-radius: 20px;
+}
+@media (max-width: 1024px) {
+    .articleWrapper .articleContent {
+        width: 85%;
+    }
+
+    .articleWrapper .articleContent .middleSection h2 {
+        width: 60%;
+        font-size: 42px;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .articleWrapper .articleContent {
+        width: 90%;
+    }
+
+    .articleWrapper .articleContent .middleSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .articleWrapper .articleContent .middleSection h2 {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    .articleWrapper .articleContent .bottomSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard .blogContent {
+        width: 100%;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .articleWrapper {
+        padding: 50px 0;
+    }
+
+    .articleWrapper .articleContent {
+        width: 95%;
+    }
+
+    .articleWrapper .articleContent .middleSection h2 {
+        font-size: 28px;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard {
+        padding: 15px;
+    }
+
+    .articleWrapper .articleContent .bottomSection .blogWrapper .blogCard img {
+        width: 100px;
+        height: auto;
+    }
+}
+

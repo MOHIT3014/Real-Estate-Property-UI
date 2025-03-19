@@ -1,0 +1,128 @@
+.connectionWrapper {
+    padding: 40px 0;
+}
+
+.connectionWrapper .connectContent {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 50px;
+
+}
+
+.connectionWrapper .connectContent .waySection {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 170px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--primary_color);
+    font-family: var(--space-grotesk);
+
+}
+
+.connectionWrapper .connectContent .waySection h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.connectionWrapper .connectContent h2 {
+    font-size: 92px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--primary_color);
+    font-family: var(--space-grotesk);
+    text-align: center;
+}
+
+.connectionWrapper .connectContent input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 100vh;
+    border: 1px solid var(--secondary_color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+
+}
+
+.connectionWrapper .connectContent input::placeholder {
+    font-family: var(--space-grotesk);
+    font-size: 16px;
+    color: var(--paragraph-color);
+}
+
+.connectionWrapper .connectContent .submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .connectionWrapper .connectContent {
+        width: 85%;
+    }
+
+    .connectionWrapper .connectContent h2 {
+        font-size: 70px;
+    }
+
+    .connectionWrapper .connectContent input {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .connectionWrapper .connectContent {
+        width: 90%;
+    }
+
+    .connectionWrapper .connectContent h2 {
+        font-size: 50px;
+    }
+
+    .connectionWrapper .connectContent input {
+        padding: 7px 16px;
+        font-size: 14px;
+    }
+
+    .connectionWrapper .connectContent .waySection {
+        width: 140px;
+    }
+
+    .connectionWrapper .connectContent .waySection h3 {
+        font-size: 12px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .connectionWrapper .connectContent {
+        width: 95%;
+    }
+
+    .connectionWrapper .connectContent h2 {
+        font-size: 36px;
+    }
+
+    .connectionWrapper .connectContent input {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .connectionWrapper .connectContent .waySection {
+        width: 120px;
+    }
+
+    .connectionWrapper .connectContent .waySection h3 {
+        font-size: 10px;
+    }
+}

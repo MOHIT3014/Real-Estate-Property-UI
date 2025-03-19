@@ -1,0 +1,169 @@
+.homeSection {
+    padding: 40px 0;
+}
+
+.homeSection .homeWrapper {
+    background-color: var(--primary_color);
+    height: 617px;
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.homeSection .homeWrapper .homeContent {
+    width: 50%;
+    color: white;
+}
+
+.homeSection .homeWrapper .homeContent .line {
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    margin-bottom: 30px;
+
+}
+
+.homeSection .homeWrapper .homeContent h2 {
+    font-size: 54px;
+    font-weight: 400;
+    font-family: var(--space-grotesk);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.homeSection .homeWrapper .homeContent .stars {
+    word-spacing: 2;
+    margin-bottom: 30px;
+}
+
+.homeSection .homeWrapper .homeContent p {
+    font-size: 16px;
+    font-family: var(--space-grotesk);
+    margin-bottom: 120px;
+    width: 73%;
+}
+
+.homeSection .homeWrapper .homeContent .ownerCard {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.homeSection .homeWrapper .homeContent .ownerCard h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--space-grotesk);
+}
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .homeSection .homeWrapper {
+        height: auto;
+        padding: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeSection .homeWrapper .homeContent {
+        width: 80%;
+    }
+
+    .homeSection .homeWrapper .homeContent h2 {
+        font-size: 44px;
+    }
+
+    .homeSection .homeWrapper .homeContent p {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .homeSection .homeWrapper .homeImage {
+        width: 100%;
+        height: auto;
+    }
+    .homeSection .homeWrapper .homeImage img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .homeSection .homeWrapper {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeSection .homeWrapper .homeContent {
+        width: 100%;
+    }
+
+    .homeSection .homeWrapper .homeContent h2 {
+        font-size: 36px;
+    }
+
+    .homeSection .homeWrapper .homeContent p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .homeSection .homeWrapper .homeContent .ownerCard {
+        
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+    }
+    .homeSection .homeWrapper .homeImage {
+        width: 100%;
+        height: auto;
+    }
+    .homeSection .homeWrapper .homeImage img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    
+    .homeSection .homeWrapper {
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        
+    }
+    .homeSection .homeWrapper .homeContent{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .homeSection .homeWrapper .homeContent h2 {
+        font-size: 28px;
+    }
+
+    .homeSection .homeWrapper .homeContent p {
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+    .homeSection .homeWrapper .homeContent .ownerCard {
+        
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+    }
+    .homeSection .homeWrapper .homeImage {
+        width: 100%;
+        height: auto;
+    }
+    .homeSection .homeWrapper .homeImage img {
+        width: 100%;
+        height: auto;
+    }
+
+}

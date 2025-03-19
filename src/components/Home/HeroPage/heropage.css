@@ -1,0 +1,238 @@
+.HeroSection {
+    padding: 70px 0;
+}
+.HeroSection .TopSection {
+    /* width: 60%; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.HeroSection .TopSection h1 {
+    text-align: start;
+    font-size: 86px;
+    color: var(--primary_color);
+    width: 50%;
+    text-transform: uppercase;
+    font-family: "Syne", serif;
+    font-weight: normal;
+}
+
+.HeroSection .TopContent {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-around;
+}
+.HeroSection .TopContent p{
+    text-align: start;
+}
+.topbtn{
+    display: flex;
+}
+.arrow-btn{
+    display: flex;
+    align-items: center;
+}
+.ImageWrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.ImageWrapper img{
+    width: 100%;
+    height: auto;
+}
+.FilterSection .filterBar{
+    transform: translateY(-50%);
+    height: 100px;
+    padding: 25px 36px;
+    
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    gap: 10px;
+    background: white;
+    border-radius: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    
+}
+.FilterSection .filterBar .SearchInput{
+    display: flex;
+    padding: 11px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    border-radius: 100vh;
+}
+.SearchInput input, .SearchInput select{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.SearchInput select{
+    width: 110px;
+    
+}
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .HeroSection {
+        padding: 50px 0;
+    }
+
+    .HeroSection .TopSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .HeroSection .TopSection h1 {
+        font-size: 64px;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .HeroSection .TopContent {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .HeroSection .TopContent p {
+        text-align: center;
+        margin-block: 20px;
+    }
+
+    .topbtn {
+        justify-content: center;
+    }
+
+    .ImageWrapper {
+        width: 90%;
+    }
+
+    .FilterSection .filterBar {
+        transform: translateY(0);
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .FilterSection .filterBar .SearchInput {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .SearchInput input,
+    .SearchInput select {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 14px;
+    }
+    .ImageWrapper {
+        width: 90%;
+        margin: auto;
+        margin-block: 10px;
+    }
+
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .HeroSection .TopSection h1 {
+        font-size: 48px;
+        width: 80%;
+    }
+
+    .HeroSection .TopContent {
+        width: 70%;
+    }
+
+    .HeroSection .TopContent p {
+        font-size: 14px;
+        margin-block: 20px;
+    }
+
+    .FilterSection .filterBar {
+        transform: translateY(0);
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    
+    .SearchInput input,
+    .SearchInput select {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 14px;
+    }
+    .ImageWrapper {
+        width: 90%;
+        margin: auto;
+        margin-block: 10px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .HeroSection {
+        padding: 30px 0;
+    }
+
+    .HeroSection .TopSection h1 {
+        font-size: 36px;
+        width: 90%;
+    }
+
+    .HeroSection .TopContent {
+        width: 90%;
+    }
+
+    .HeroSection .TopContent p {
+        font-size: 12px;
+        margin-block: 20px;
+    }
+
+    .ImageWrapper {
+        width: 90%;
+        margin: auto;
+        margin-block: 10px;
+    }
+
+    .FilterSection .filterBar {
+        transform: translateY(0);
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .FilterSection .filterBar .SearchInput {
+        width: 70%;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .SearchInput input,
+    .SearchInput select {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 14px;
+    }
+}

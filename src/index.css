@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.linkTag{
+  text-decoration: none;
+  color: inherit ;
+  
+}
+a{
+  text-decoration: none;
+  color: inherit ;
+  
+}
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --primary_color:#002f6c;
+    --secondary_color:rgba(0,0,0 ,0.15);
+    --heading_font:"syne";
+    --paragraph_font:"Hanken Grotesk";
+    --paragraph-color:#747474;
+    --space-grotesk:"Space Grotesk";
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn{
+  padding: 6px 24px;
+  border-radius: 100vh;
+  text-transform: uppercase;
+}
+.btn.rounded{
+  padding: 6px;
+}
+.btn.btn-filled{
+  background: var(--primary_color);
+  color: white;
+
+}
+.btn.btn-unfilled{
+  border: 1px solid;
+}
+.topbtn{
+  display: flex;
+}
+.arrow-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tag{
+  padding: 10px 25px;
+  background: white;
+  border: 1px solid var(--secondary_color);
+  border-radius: 100vh;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+.tag.rounded{
+  padding: 10px;
+}

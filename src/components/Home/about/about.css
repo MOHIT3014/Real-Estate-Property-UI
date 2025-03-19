@@ -1,0 +1,167 @@
+.aboutSection {
+    position: relative;
+}
+
+.aboutSection .propertyWrapper {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 50px;
+
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 10px;
+    border-bottom: 1px solid var(--secondary_color);
+    width: 50%;
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper h2 {
+    font-size: 130px;
+    font-family: var(--space-grotesk);
+    color: var(--primary_color);
+    font-weight: normal;
+    text-align: start;
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper p {
+    font-size: 24px;
+    font-family: var(--space-grotesk);
+    font-weight: normal;
+    text-align: start;
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo h2 {
+    gap: 20px;
+    width: 70%;
+    margin: auto 0;
+    font-family: var(--space-grotesk);
+    text-align: start;
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo p {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: start;
+
+}
+
+.aboutSection .propertyWrapper .propertyContentWrapper .moreAbout {
+    display: flex;
+    margin-top: 40px;
+}
+
+.aboutSection .backText {
+    font-size: 134px;
+    font-family: var(--paragraph_font);
+    color: rgba(0, 0, 0, 0.05);
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    text-transform: uppercase;
+
+}
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .aboutSection .propertyWrapper {
+        width: 85%;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper h2 {
+        font-size: 100px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper p {
+        font-size: 20px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo h2 {
+        width: 100%;
+    }
+
+    .aboutSection .backText {
+        font-size: 100px;
+        right: 20px;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .aboutSection .propertyWrapper {
+        width: 90%;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper h2 {
+        font-size: 80px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper p {
+        font-size: 18px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo p {
+        font-size: 14px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .moreAbout {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutSection .backText {
+        font-size: 80px;
+        right: 10px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .aboutSection .propertyWrapper {
+        width: 95%;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper {
+        /* flex-direction: column; */
+        text-align: center;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper h2 {
+        font-size: 60px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .yearWrapper p {
+        font-size: 16px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo h2 {
+        font-size: 22px;
+    }
+
+    .aboutSection .propertyWrapper .propertyContentWrapper .propertyInfo p {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .aboutSection .backText {
+        font-size: 50px;
+        right: 5px;
+        bottom: 10px;
+    }
+}

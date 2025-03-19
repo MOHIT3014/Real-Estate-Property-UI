@@ -1,0 +1,149 @@
+.marketingSection {
+    padding: 80px 0;
+}
+
+.marketingSection .marketingWrapper {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.marketingSection .marketingWrapper .marketingContent {
+    width: 60%;
+    font-size: 54px;
+    font-weight: normal;
+    font-family: var(--space-grotesk);
+    color: var(--primary_color);
+    text-transform: uppercase;
+}
+
+.marketingSection .marketingWrapper .marketingCard {
+    display: flex;
+    width: 60%;
+    gap: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.marketingSection .marketingWrapper .marketingCard .marketCard {
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.marketingSection .marketingWrapper .marketingCard .marketCard p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 306px;
+    font-family: var(--space-grotesk);
+    color: var(--paragraph-color);
+}
+
+.marketingSection .marketingWrapper .marketingCard .marketCard h3 {
+    font-size: 24px;
+    font-weight: 400;
+    width: 306px;
+    font-family: var(--space-grotesk);
+}
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .marketingSection {
+        padding: 60px 0;
+    }
+
+    .marketingSection .marketingWrapper {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .marketingSection .marketingWrapper .marketingContent {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+
+    .marketingSection .marketingWrapper .marketingCard {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard {
+        width: 300px;
+        height: auto;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard p,
+    .marketingSection .marketingWrapper .marketingCard .marketCard h3 {
+        width: 100%;
+    }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .marketingSection {
+        padding: 40px 0;
+    }
+
+    .marketingSection .marketingWrapper .marketingContent {
+        font-size: 32px;
+        
+    }
+    .marketingSection .marketingWrapper .marketingContent  h2{
+        text-align: center;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard {
+        gap: 30px;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard {
+        width: 250px;
+        padding: 15px;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard p {
+        font-size: 14px;
+    }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 576px) {
+    .marketingSection {
+        padding: 30px 0;
+    }
+
+    .marketingSection .marketingWrapper .marketingContent {
+        font-size: 28px;
+    }
+    .marketingSection .marketingWrapper .marketingContent  h2{
+        text-align: center;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard h3 {
+        font-size: 20px;
+    }
+
+    .marketingSection .marketingWrapper .marketingCard .marketCard p {
+        font-size: 12px;
+    }
+}

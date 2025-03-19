@@ -1,0 +1,21 @@
+.locationWrapper {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.locationWrapper .locationCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.locationWrapper .locationCard .locationImage img {
+    width: 260px;
+    height: 250px;
+    border-radius: 30px;
+    /* position: relative; */
+
+}
