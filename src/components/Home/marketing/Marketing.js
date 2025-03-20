@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import './Marketing.css'
+import { Market } from '../../../data'
 const Marketing = () => {
     return (
         <div className="marketingSection" id="marketingSection">
@@ -10,45 +11,18 @@ const Marketing = () => {
                         in the Real Estate Market</h2>
                 </div>
                 <div className="marketingCard">
-                    <div className="marketCard">
-                        <div className="marketIcon">
-                            <img src="medias/agent-icon.svg" alt=""/>
-                        </div>
-                        <h3>Experienced agents</h3>
-                        <p>Lorem ipsum dolor sit amet onsectetur.
-                            Nunc morbi et tristique senectus quam.
-                            Risus et in euismod eleifend.</p>
-                    </div>
-
-                    <div className="marketCard">
-                        <div className="marketIcon">
-                            <img src="medias/service-icon.svg" alt=""/>
-                        </div>
-                        <h3>Personalized service</h3>
-                        <p>Lorem ipsum dolor sit amet onsectetur.
-                            Nunc morbi et tristique senectus quam.
-                            Risus et in euismod eleifend.</p>
-                    </div>
-
-                    <div className="marketCard">
-                        <div className="marketIcon">
-                            <img src="medias/comprehensive-icon.svg" alt=""/>
-                        </div>
-                        <h3>Comprehensive listings</h3>
-                        <p>Lorem ipsum dolor sit amet onsectetur.
-                            Nunc morbi et tristique senectus quam.
-                            Risus et in euismod eleifend.</p>
-                    </div>
-
-                    <div className="marketCard">
-                        <div className="marketIcon">
-                            <img src="medias/market-icon.svg" alt=""/>
-                        </div>
-                        <h3>Market insights</h3>
-                        <p>Lorem ipsum dolor sit amet onsectetur.
-                            Nunc morbi et tristique senectus quam.
-                            Risus et in euismod eleifend.</p>
-                    </div>
+                    {
+                        Market.map((item) => {
+                            return (
+                                <div className="marketCard" key={item.id}>
+                                    <div className="marketIcon">
+                                        <img src={item.icon} alt="" />
+                                    </div>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.desc}</p>
+                                </div>
+                            )
+                        })}
                 </div>
             </div>
         </div>

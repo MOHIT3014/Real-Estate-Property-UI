@@ -13,6 +13,7 @@ import Employee from './components/Home/Employee/EmployeeCard'
 import Articles from './components/Home/Article/articleCard'
 import ConnectWithSite from './components/Home/ConnectWithSite/ConnectionCard'
 import FooterImage from './components/Home/FooterImage/FooterImageCard'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
       <Articles/>
       <ConnectWithSite/>
       <FooterImage/>
+      <Footer/>
+
 
 
     </div>
